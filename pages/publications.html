@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% set active_page = "Publications" %}
+
+{%- block content %}
+<script src="{{ SITEURL }}/theme/js/bib-container.js"></script>
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/bib.css">
+<section id="content" class="body">
+<h2 class="entry-title">Publications</h2>
+
+
+<p class="bib">
+  Nilsson, S.; <span class="me">Dahlgren, B.</span>; Roth, O.; Jonsson, M.
+  "H$_2$O$_2$ and radiation induced dissolution of UO$_2$ and SIMFUEL in HCO$_3^-$ deficient aqueous solution"
+  <span class="journal">In progress.</span>
+</p>
+
+<p class="bib">
+  <span class="me">Dahlgren, B.</span>; Reif, M.; Hünenberger, P; Hansen, N.
+  "Calculation of derivative thermodynamic hydration and aqueous partial molar properties of ions based on atomistic simulations"
+  <span class="journal">In press: J. Chem. Theory Comput.</span>, 2012, doi: <a href=http://dx.doi.org/10.1021/ct300260q>10.1021/ct300260q</a>
+</p>
+
+<p class="bib">
+  Olivia, R.; <span class="me">Dahlgren, B.</span>; LaVerne, J.
+  "Radiolysis of Water on ZrO$_2$ Nanoparticles"
+  <span class="journal">Submitted to: J. Phys. Chem.</span>
+</p>
+
+<p class="bib">
+  Trummer, M.; <span class="me">Dahlgren, B.</span>; Jonsson M.
+  "The effect of Y$_2$O$_3$ on the dynamics of oxidative dissolution of UO$_2$"
+  <span class="journal">J. Nucl. Mater.</span>, 2010, <b>407</b>, 195–199. doi: <a href=http://dx.doi.org/10.1016/j.jnucmat.2010.10.014>10.1016/j.jnucmat.2010.10.014</a>
+</p>
+
+
+</section>
+{% endblock content -%}
