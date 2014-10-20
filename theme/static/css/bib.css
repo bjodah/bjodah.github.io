@@ -1,14 +1,30 @@
 /**************** bibliography style **********/
 .bib {
-margin-left: 1em;
-text-indent: -1em;
+    margin-left: 1em;
+    text-indent: -1em;
 }
 .bib .me {
-font-weight: bold;
+    font-weight: bold;
 }
 
 .bib .journal {
-font-style: italic;
+    font-style: italic;
+}
+
+.bib .year {
+    font-weight: bold;
+}
+
+.bib .volume {
+    font-style: italic;
+}
+
+.bib .issue {
+
+}
+
+.bib .doi {
+    font-family: "Incosolata", "Consolata", "Monaco", monospace, serif;
 }
 
 

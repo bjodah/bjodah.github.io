@@ -9,6 +9,7 @@ SITEURL = 'http://bjodah.github.io'
 THEME = 'theme'
 GITHUB_USERNAME = 'bjodah'
 DISQUS_SITENAME = 'bjodahgithubio'
+GOOGLE_ANALYTICS = 'UA-55917870-1'
 
 
 TIMEZONE = 'Europe/Stockholm'
