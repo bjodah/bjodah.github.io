@@ -17,7 +17,7 @@ cd ${GITHUB_REPO}
 git branch -D $OVERWRITE_UPLOAD_BRANCH
 git checkout --orphan $OVERWRITE_UPLOAD_BRANCH
 git rm -rf . > /dev/null
-cp -r ${UPLOAD_DIR}/* .
+cp -r ${UPLOAD_DIR}/. .
 git add -f . > /dev/null
 git commit -m "Lastest docs from successful drone build (hash: ${DRONE_COMMIT})"
 git push -f origin $OVERWRITE_UPLOAD_BRANCH
