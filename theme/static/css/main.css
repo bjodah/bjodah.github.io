@@ -3,6 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
 @import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url("../../theme/css/pygment.css");
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
     display: block;
 }
@@ -528,7 +529,7 @@ code, pre {
     font-size: .9em;
 }
 code, kbd, pre, samp {
-    color: lightyellow;
+    color: #FFFFC0;
     font-family: "Incosolata", "Consolata", "Monaco", monospace, serif;
     background: #202020;
     padding-left: 5pt;
@@ -1013,4 +1014,12 @@ dl#archives .archive-item:hover .tags {
     margin: 0;
     font-size: 12pt;
     color: #888;
+}
+tt {
+    background: #e8e8e8;
+    padding: 2pt;
+    border-width: 1pt;
+    border-radius: 3pt;
+    border-color: #bbb;
+    border-style: solid;
 }
