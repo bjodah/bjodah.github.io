@@ -506,7 +506,7 @@ h2, h3 {
     -moz-text-size-adjust: 100%
 }
 body {
-    background-color: #eee;
+    background-color: #e4e4d0;
     font-family: "Lato","proxima-nova", "Helvetica Neue", Helvetica, Arial, Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, sans-serif;
     font-weight: normal;
     text-align: left;
@@ -519,7 +519,7 @@ body {
 }
 a {
     text-decoration: none;
-    color: SteelBlue;
+    color: darkgreen;
 }
 a:hover {
     color: #000;
@@ -528,7 +528,11 @@ code, pre {
     font-size: .9em;
 }
 code, kbd, pre, samp {
+    color: lightyellow;
     font-family: "Incosolata", "Consolata", "Monaco", monospace, serif;
+    background: #202020;
+    padding-left: 5pt;
+    padding-right: 5pt;
 }
 #mastwrap {
     z-index: 999;
@@ -568,7 +572,7 @@ a.logo {
     position: absolute;
     background-color: #666;
     padding: 8px 12px;
-    color: #EEE;
+    color: #e4e4d0;
     background-image: url(../img/portrait_70.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -617,7 +621,7 @@ nav ul a {
     letter-spacing: 2px;
 }
 nav ul a.active {
-    color: SteelBlue;
+    color: #592a0d;
 }
 #sitewrap {
     font-family: "Domine",Georgia,serif;
@@ -877,7 +881,7 @@ ol#post-list li {
     border-bottom-left-radius: 3px;
     float: right;
     padding: 5px 12px;
-    background-color: #EEE;
+    background-color: #e4e4d0;
 }
 #footwrap .back_up i {
     font-style: normal;
