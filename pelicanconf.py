@@ -10,7 +10,7 @@ THEME = 'theme'
 GITHUB_USERNAME = 'bjodah'
 DISQUS_SITENAME = 'bjodahgithubio'
 GOOGLE_ANALYTICS = 'UA-55917870-1'
-
+GOOGLE_SITE_VERIFICATION = 'mIWcgbZGixajgbPgQD8c4BamwAuiJ5dbLYvr0wEAQV4'
 
 TIMEZONE = 'Europe/Stockholm'
 DEFAULT_LANG = u'en'
