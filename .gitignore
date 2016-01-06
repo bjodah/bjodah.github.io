@@ -1,6 +1,2 @@
-*.log
-*.pot
-*.pyc
-output
-*.pid
-cache
+site/output
+site/cache
