@@ -1,8 +1,0 @@
-Title: Bateman Equation
-Slug: bateman
-Date: 2015-07-25
-Category: mathematics
-Tags: sympy, jupyter
-Author: Björn Dahlgren
-Summary: I explore the differential equations describing coupled decay using SymPy and introduce the Bateman Equation and how it may be implemented in Python.
-
