@@ -1,3 +1,4 @@
 site/.*.db
 site/output
 site/cache
+**/__pycache__
