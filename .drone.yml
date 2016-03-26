@@ -1,10 +1,20 @@
-image: bjodah/trusty-drone-miniconda34  # contains git, wget, gcc, g++, gfortran, cmake, valgrind, miniconda, env: MINICONDA_PATH
-git:
-    path: github.com/bjodah/bjodah.github.io
-script:
-  - export PATH=$MINICONDA_PATH/bin:$PATH
-  - conda install --quiet pip
-  - pip install -r requirements.txt 
-  - make publish
-  - echo $DRONE_BRANCH
-  - if [[ "$DRONE_BRANCH" == "source" ]]; then make github_upload; fi
+build:
+  image: bjodah/bjodahimg:latest
+  commands:
+    - cd site/
+    - nikola build
+    - cd -
+    - mkdir deploy
+    - cp -r site/build/ deploy/$CI_BRANCH
+
+
+deploy:
+
+  rsync:
+    host: hera.physchem.kth.se
+    user: bjodah
+    port: 22
+    source: deploy/
+    target: ~/public_html/
+    recursive: true
+    delete: false

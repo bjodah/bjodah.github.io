@@ -14,20 +14,25 @@ The problem that arises is that you are not sure that your clean up code gets ex
 if the user aborts the script by e.g. hitting Ctrl+c. An elegant solution was given here
 http://unix.stackexchange.com/a/149093/119480
 
-giving it some context a script might look something like this:
+to illustrate the solution let's consider the following script:
 
 .. code:: bash
 
+   #!/bin/bash
+   TMPDIR=$(mktemp -d)
+   echo $TMPDIR
    cleanup() {
        rm -r $TMPDIR
        exit
    }
-   TMPDIR=$(mktemp -d)
-   trap "cleanup $TMPDIR" INT TERM
-   ( cd $TMPDIR; touch some-temporary-file.txt )
+   trap cleanup INT TERM
+   echo "A" | tee $TMPDIR/a.txt
+   sleep 3  # Try hitting Ctrl-C here (use Ctrl-Z to inspect files)
+   echo "B" | tee $TMPDIR/b.txt
    cleanup
+   echo "C" | tee $TMPDIR/b.txt # will never be reached
 
 
 The above code removes the temporary directory created at exit, no matter if the
-script is allowed to finnish or aborted by the user invoking ``kill`` (defaults to SIGTERM) or
-hits Ctrl+C (sends the SIGINT signal).
+script is allowed to finnish or aborted by the user invoking ``kill`` on the PID
+(defaults to SIGTERM) or hits Ctrl+C (sends the SIGINT signal).
