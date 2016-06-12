@@ -17,7 +17,7 @@ import time
 
 
 # Data about this site
-BLOG_AUTHOR = "Björn Ingvar Dahlgren"  # (translatable)
+BLOG_AUTHOR = "Björn Dahlgren"  # (translatable)
 BLOG_TITLE = "Björn I. Dahlgren's personal page"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
