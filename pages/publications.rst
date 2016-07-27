@@ -1,13 +1,12 @@
-{% extends "base.html" %}
-{% set active_page = "Publications" %}
+.. title: publications
+.. slug: publications
+.. date: 2016-07-27 23:44:00 UTC+01:00
+.. tags:
+.. link:
+.. descriptions:
 
-{%- block content %}
-<script src="{{ SITEURL }}/theme/js/bib-container.js"></script>
-<link rel="stylesheet" href="{{ SITEURL }}/theme/css/bib.css">
-<section id="content" class="body">
-<h2 class="entry-title">Publications</h2>
-
-
+Publications
+============
 <p class="bib">
   Nilsson, S.; <span class="me">Dahlgren, B.</span>; Roth, O.; Jonsson, M.
   "H$_2$O$_2$ and radiation induced dissolution of UO$_2$ and SIMFUEL in HCO$_3^-$ deficient aqueous solution"
@@ -50,7 +49,3 @@
   <span class="pages">pp 195-199</span>,
   <span class="doi">doi: <a href=http://dx.doi.org/10.1016/j.jnucmat.2010.10.014>10.1016/j.jnucmat.2010.10.014</a>
 </p>
-
-
-</section>
-{% endblock content -%}

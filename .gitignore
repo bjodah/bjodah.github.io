@@ -1,4 +1,4 @@
-site/.*.db
-site/output
-site/cache
+.*.db
+output/
+cache/
 **/__pycache__

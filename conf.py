@@ -172,9 +172,9 @@ POSTS = (
     ("posts/*.ipynb", "posts", "post.tmpl"),
 )
 PAGES = (
-    ("stories/*.rst", "stories", "story.tmpl"),
-    ("stories/*.txt", "stories", "story.tmpl"),
-    ("stories/*.ipynb", "stories", "story.tmpl"),
+    ("pages/*.rst", "pages", "story.tmpl"),
+    ("pages/*.txt", "pages", "story.tmpl"),
+    ("pages/*.ipynb", "pages", "story.tmpl"),
 )
 
 
