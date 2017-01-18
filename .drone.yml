@@ -1,11 +1,9 @@
 build:
-  image: bjodah/bjodahimg:latest
+  image: bjodah/bjodahimg16:v1.2
   commands:
-    - cd site/
     - nikola build
-    - cd -
     - mkdir deploy
-    - cp -r site/build/ deploy/$CI_BRANCH
+    - cp -r output/ deploy/$CI_BRANCH
 
 
 deploy:
