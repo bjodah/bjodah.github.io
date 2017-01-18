@@ -10,9 +10,9 @@ deploy:
 
   rsync:
     host: hera.physchem.kth.se
-    user: bjodah
+    user: bjodah-github-io
     port: 22
     source: deploy/
-    target: ~/public_html/blog
+    target: ~/public_html
     recursive: true
     delete: false
