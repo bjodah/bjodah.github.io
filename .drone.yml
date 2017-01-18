@@ -15,6 +15,6 @@ deploy:
     user: bjodah
     port: 22
     source: deploy/
-    target: ~/public_html/
+    target: ~/public_html/blog
     recursive: true
     delete: false
