@@ -1,6 +1,5 @@
-*.log
-*.pot
-*.pyc
-output
-*.pid
-cache
+.*.db
+output/
+cache/
+**/__pycache__
+posts/.ipynb_checkpoints/

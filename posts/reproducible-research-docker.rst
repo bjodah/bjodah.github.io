@@ -1,8 +1,7 @@
-Reproducible research with Docker
-=================================
-
-:date: 2015-04-12
-:tags: docker, reproducible research
+.. title: Reproducible research with Docker
+.. date: 2015-04-12 17:05:21 UTC+01:00
+.. tags: docker, reproducible research
+.. slug: reproducible-research-docker
 
 When I analyse data in my research I often tend to write small scripts
 for each of the steps. Those scripts often rely on 3rd party packages
@@ -138,7 +137,7 @@ And now let's write a small script orchestrating the full process:
    #!/bin/bash -x
    MY_DOCKER_IMAGE="./environment"
    MY_HASH=$(docker build $MY_DOCKER_IMAGE | tee /dev/tty | tail -1 | cut -d' ' -f3)
-   docker run -v $(pwd)/input:/input -v $(pwd)/output:/output -w /input -i $MY_HASH ./generate_report.sh
+   docker run --rm -v $(pwd)/input:/input -v $(pwd)/output:/output -w /input -i $MY_HASH ./generate_report.sh
 
    EOF
 
@@ -186,7 +185,7 @@ generated data.
 
 .. code-block:: bash
 
-   docker run -v $(pwd)/input:/input:ro -v $(pwd)/output:/output -w /input --net='none' -i $MY_DOCKER_IMAGE ./generate_report.sh
+   docker run --rm -v $(pwd)/input:/input:ro -v $(pwd)/output:/output -w /input --net='none' -i $MY_DOCKER_IMAGE ./generate_report.sh
 
 One thing you will soon notice is that docker runs as UID=0 (root),
 which means that files generated in output will not be owned by your
@@ -198,7 +197,7 @@ variables:
 
 .. code-block:: bash
 
-   docker run -e HOST_UID=$(id -u) -e HOST_GID=$(id -g) -v $(pwd)/input:/input:ro -v $(pwd)/output:/output -w /input -i $MY_DOCKER_IMAGE ./entrypoint.sh
+   docker run --rm -e HOST_UID=$(id -u) -e HOST_GID=$(id -g) -v $(pwd)/input:/input:ro -v $(pwd)/output:/output -w /input -i $MY_DOCKER_IMAGE ./entrypoint.sh
 
 .. code-block:: bash
 
