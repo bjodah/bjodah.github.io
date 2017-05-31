@@ -1,0 +1,4 @@
+Sitemap: http://bjodah.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: bjodah.github.io

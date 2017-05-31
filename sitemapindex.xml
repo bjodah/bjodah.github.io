@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+ <sitemap>
+  <loc>http://bjodah.github.io/categories/bash.xml</loc>
+  <lastmod>2017-01-17T23:23:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://bjodah.github.io/categories/docker.xml</loc>
+  <lastmod>2017-01-17T23:23:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://bjodah.github.io/categories/nikola.xml</loc>
+  <lastmod>2017-01-17T23:23:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://bjodah.github.io/categories/python.xml</loc>
+  <lastmod>2017-05-31T13:07:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://bjodah.github.io/categories/reproducible-research.xml</loc>
+  <lastmod>2017-01-17T23:23:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://bjodah.github.io/rss.xml</loc>
+  <lastmod>2017-05-31T13:07:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://bjodah.github.io/sitemap.xml</loc>
+  <lastmod>2017-05-31T13:07:00Z</lastmod>
+ </sitemap>
+</sitemapindex>
